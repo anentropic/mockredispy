@@ -750,6 +750,17 @@ class MockRedis(object):
         self.redis[dest] = union
         return len(union)
 
+
+    #### Publish / Subscribe ####
+
+    # TODO: Simply adding the interface so code doesn't fail.
+    #       Fill in as required.
+    def publish(self, channel, message):
+        pass
+
+    def subscribe(self, channels):
+        pass
+
     #### Script Commands ####
 
     def eval(self, script, numkeys, *keys_and_args):
