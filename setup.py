@@ -14,13 +14,11 @@ setup(name='mockredispy',
       url='http://www.github.com/locationlabs/mockredis',
       license='Apache2',
       packages=find_packages(exclude=['*.tests']),
-      setup_requires=[
-          'nose'
-      ],
       extras_require={
           'lua': ['lunatic-python-bugfix==1.1'],
       },
       tests_require=[
+          'nose',
           'redis>=2.7.2'
       ],
       test_suite='mockredis.tests',
